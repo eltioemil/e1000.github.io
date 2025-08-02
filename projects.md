@@ -1,9 +1,8 @@
 ---
 layout: page
+title: Projects & Achievements
 permalink: /projects/
 ---
-
-# Projects & Achievements
 
 Here are some of the key projects and initiatives I've worked on throughout my career. Each represents different challenges and learning opportunities in the DevOps and cloud infrastructure space.
 

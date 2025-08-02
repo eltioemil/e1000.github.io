@@ -1,9 +1,8 @@
 ---
 layout: page
+title: Get In Touch
 permalink: /contact/
 ---
-
-# Get In Touch
 
 I'm always interested in new opportunities, collaborations, or just having a chat about DevOps, cloud infrastructure, and technology. Feel free to reach out!
 

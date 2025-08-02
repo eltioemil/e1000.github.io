@@ -1,9 +1,9 @@
 ---
 layout: page
+title: Emilio Ureña Ramírez - Senior DevOps Engineer
 permalink: /cv/
 ---
 
-# Emilio Ureña Ramírez - Senior DevOps Engineer
 ## Professional Summary
 
 As a DevOps Engineer with a diverse background in cloud technologies and infrastructure management, I have developed a strong foundation in Cloud and Kubernetes over the years. My career began in system administration, gradually leading to roles in DevOps, Infrastructure and Platform teams, where I focus on creating efficient and reliable infrastructure solutions. I enjoy collaborating with colleagues to foster a culture of continuous improvement, emphasizing infrastructure as code and agile methodologies. By tackling challenges and streamlining processes, I aim to contribute positively to team success and organizational goals.

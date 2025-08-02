@@ -1,9 +1,8 @@
 ---
 layout: page
+title: Skills
 permalink: /skills/
 ---
-
-# Skills
 
 {% for skill_category in site.skills %}
 ## {{ skill_category.name }}
