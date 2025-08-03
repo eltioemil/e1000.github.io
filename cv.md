@@ -6,99 +6,93 @@ permalink: /cv/
 
 ## Professional Summary
 
-As a DevOps Engineer with a diverse background in cloud technologies and infrastructure management, I have developed a strong foundation in Cloud and Kubernetes over the years. My career began in system administration, gradually leading to roles in DevOps, Infrastructure and Platform teams, where I focus on creating efficient and reliable infrastructure solutions. I enjoy collaborating with colleagues to foster a culture of continuous improvement, emphasizing infrastructure as code and agile methodologies. By tackling challenges and streamlining processes, I aim to contribute positively to team success and organizational goals.
+Senior DevOps and Platform Engineer with a strong foundation in Kubernetes, cloud infrastructure, and automation. Over the years, I've worked across AWS and GCP environments, leading infrastructure projects, building internal platforms, and driving FinOps and observability initiatives. I care deeply about creating resilient systems, enabling developer self-service, and contributing to a culture of shared ownership and continuous improvement.
 
 ## Professional Experience
 
 ### Senior Cloud Architect
-**T-Systems Iberia** | *Bilbao (100% Remote) | 01/2025 - Present*
-- Design, implement, and manage cloud architectures on AWS to support scalable, secure, and cost-efficient systems
-- Collaborate with clients to automate and optimize infrastructure deployment and CI/CD pipelines using tools like Terraform, Jenkins, ArgoCD and Github Actions
-- Participate in cloud migration projects and advise clients on cloud-native solutions, ensuring seamless integration with existing infrastructure
-- Administer AWS EKS Kubernetes clusters, utilizing Traefik for ingress and Argo CD for continuous delivery, while advising our clients on best practices and next steps in Kubernetes
+**T-Systems Iberia** — *Remote from Bilbao | Jan 2025 – Present*
+- Design and implement AWS architectures to support secure, scalable, and cost-efficient systems
+- Automate infrastructure and CI/CD pipelines using Terraform, Jenkins, GitHub Actions, and Argo CD
+- Guide clients through Kubernetes (EKS) adoption and manage cluster operations with Traefik ingress and GitOps delivery
+- Advise on cloud-native patterns and best practices during migration and modernization projects
 
 ### Senior Platform Engineer
-**BlueLabs** | *Bilbao (100% Remote) | 01/2022 - 01/2025*
-- Worked in the infrastructure team for two and a half years, which recently transitioned to an SRE team, primarily focused on GCP and GKE for Kubernetes management
-- Managed multiple GCP organizations with shared VPCs, emphasizing network security, and utilized GCP services such as Memorystore, Cloud SQL with PostgreSQL, Pub/Sub, and Pulsar for messaging
-- Automated infrastructure management and deployments using Infrastructure as Code principles, GitHub Actions for Terraform, and enforced governance with Open Policy Agent
-- Employed Argo CD and GitOps for service deployments in Kubernetes, and developed Python services to automate processes like managing the lifecycle of spot nodes
-- Deployed an observability solution using the LGTM stack (Loki, Grafana, and Mimir) on Kubernetes, leveraging spot nodes for efficiency
-- Architected and introduced Cloudflare for CDN and DDoS protection, managing over 100 zones using Cloudflare for SaaS
-- Developed our own back-office applications to manage services, focusing on the understanding of product functionality to have a better view of the relationship between infrastructure, platform and product; actively participated in incident and postmortem investigations
+**BlueLabs** — *Remote from Bilbao | Jan 2022 – Jan 2025*
+- Managed GCP infrastructure across multiple orgs, including shared VPCs and secure networking
+- Built internal tooling in Python to automate Kubernetes spot node lifecycles
+- Adopted GitOps workflows with Argo CD, driving consistent deployments in GKE
+- Deployed an LGTM observability stack (Loki, Grafana, Mimir) on spot nodes for efficiency
+- Architected Cloudflare for SaaS integration and managed over 100 zones for CDN and DDoS protection
+- Developed internal back-office tools to improve infrastructure-product visibility and incident response
 
 ### Senior DevOps Engineer
-**Clarivate** | *Bilbao (100% Remote) | 05/2020 - 01/2022*
-- Managed multi-region AWS infrastructure as part of the DevOps Automation Team, handling cross-core products including API gateways, IAM services, and data services within a globally distributed team located in Philadelphia, Bilbao, and Bangalore
-- Collaborated on the management of core services, enhancing automation and contributing to architecture design
-- Promoted DevOps best practices by developing internal services and automating processes using Ansible, Packer, Terraform, Spinnaker, and Jenkins
-- Worked with the team to implement Kubernetes using Terraform, Helm, EKS, Istio, and Kiali
-- Conducted several demos and internal talks to promote cloud-native development
-- Developed an automated solution to deploy Terraform infrastructure via Jenkins Pipelines, adhering to the D.R.Y. principle and using a custom Groovy shared library. This library facilitated building applications and deploying them to ECS Fargate, was made accessible company-wide through Backstage, and empowered development teams to contribute to infrastructure code at their own pace
+**Clarivate** — *Remote from Bilbao | May 2020 – Jan 2022*
+- Managed multi-region AWS infrastructure for global services, including APIs, IAM, and data services
+- Built Terraform and ECS Fargate deployment pipelines using Jenkins and a custom Groovy shared library
+- Enabled self-service infrastructure via Backstage integration
+- Promoted DevOps culture with internal demos, workshops, and automation frameworks
+- Led EKS adoption and service mesh implementation with Istio and Kiali
 
-### Manager/Technical Lead
-**StubHub** | *Bilbao (100% Remote) | 09/2019 - 05/2020*
-- Promoted to lead the DevOps team in Bilbao, driving initiatives to enhance collaboration and efficiency across teams
-- Fostered a DevOps culture, empowering teams to adopt best practices and streamline their workflows
-- Spearheaded efforts to enhance collaboration with StubHub's delivery center in China, facilitating better communication and project alignment
-- Led the FinOps initiative, successfully reducing the annual cloud expenditure by $1 million, effectively reducing the cloud bill by half
+### Manager / Technical Lead
+**StubHub** — *Remote from Bilbao | Sep 2019 – May 2020*
+- Led the Bilbao DevOps team, aligning projects with China delivery center
+- Championed FinOps efforts that cut annual cloud costs by 50% (~$1M)
+- Drove DevOps best practices adoption across teams
 
 ### Senior Infrastructure Engineer
-**StubHub** | *Bilbao (Hybrid) | 06/2018 - 09/2019*
-- Joined StubHub's Bilbao DevOps team working remotely from Madrid before moving to Bilbao
-- Performed DevOps on multidisciplinary squads within the company
-- Involved in defining and implementing a Kubernetes platform using KOPS (EKS didn't exist yet)
-- Member of an international platform team (San Francisco - Bilbao) responsible for creating new cloud infrastructure to support Pivotal Cloud Foundry PaaS
-- Helped define the deployment strategy for the infrastructure, ensuring it was fully automated
-- Migrated services from the old StubHub's on-prem infrastructure to the new one in the cloud
+**StubHub** — *Hybrid | Jun 2018 – Sep 2019*
+- Helped define and deploy Kubernetes with KOPS pre-EKS
+- Migrated services from on-prem to AWS cloud
+- Contributed to Pivotal Cloud Foundry platform enablement across SF and Bilbao teams
+- Ensured full automation of cloud infrastructure provisioning
 
-### DevOps/Cloud Systems Architect
-**BBVA Next Technologies (Formerly BEEVA)** | *Madrid (Hybrid) | 01/2016 - 06/2018*
-- Joined BEEVA (now BBVA Next Technologies) as a System Administrator and quickly assigned to a digital payments platform project
-- Ensured PCI data security compliance for a digital payments project for BBVA bank and adhered to European Central Bank requirements for public cloud deployment
-- Transitioned to a new team focused on experimentation and research with external clients, including Naturgy, Ferrovial, and Securitas Direct, contributing to projects in IoT, Big Data, and serverless applications on AWS
-- Embraced infrastructure as code using tools like Terraform and CloudFormation, following agile methodologies and enforcing cloud-native principles
-- Achieved full automation in deployments using Jenkins and Bamboo, leading to several successful project releases
-- Promoted annually, reaching the level of Cloud Systems Architect
+### DevOps / Cloud Systems Architect
+**BBVA Next Technologies (formerly BEEVA)** — *Hybrid | Jan 2016 – Jun 2018*
+- Achieved PCI and ECB compliance for public cloud payments platform at BBVA
+- Contributed to client-facing innovation projects in IoT, Big Data, and serverless on AWS
+- Automated deployments with Jenkins and Bamboo using Terraform and CloudFormation
+- Promoted annually, reaching architect level
 
-### System Administrator/DevOps
-**Rentalia Holidays S.L.** | *Madrid | 06/2013 - 01/2016*
-- This job was my first contact with the DevOps paradigm, joined a multidisciplinary team
-- Maintained our own physical housing and datacenter
-- Migrated from baremetal to our own virtual solution (OpenNebula)
-- Improved the architecture and helped reduce business risks from the technical side
-- Turned an old non-scalable system into a more reliable, scalable system
-- Implemented continuous integration and deployment with automation tools like Puppet, Foreman, Hiera, Librarian, and r10k
-- Achieved an increase in uptime from 97% to 99.9%
+### System Administrator / DevOps
+**Rentalia Holidays S.L.** — *Madrid | Jun 2013 – Jan 2016*
+- Migrated from baremetal to OpenNebula-based virtualization
+- Introduced CI/CD and config management with Puppet and Foreman
+- Boosted uptime from 97% to 99.9% by modernizing legacy systems
 
 ### IT Manager
-**Ferri Villena S.L.** | *Villena (Alicante) | 07/2008 - 06/2013*
-- Managed IT department, overseeing complete system administration
-- Handled Linux and Windows servers, ERP, and corporate mail systems
-- Managed software and hardware procurement
-- Oversaw networking and database management
-- Provided technical advisory to the directive committee
+**Ferri Villena S.L.** — *Villena (Alicante) | Jul 2008 – Jun 2013*
+- Led IT operations and infrastructure for an industrial company
+- Managed Linux/Windows servers, ERP systems, and internal networking
+- Acted as technical advisor to the executive team
+
+## Skills
+
+{% for skill_category in site.skills %}
+**{{ skill_category.name }}**
+{% for skill in skill_category.items %}
+- {{ skill }}
+{% endfor %}
+{% endfor %}
 
 ## Education
 
-### Degree in Computer Engineering
-**Universitat Oberta de Catalunya** | *Remote education*
-- Attending on my free time, ongoing
+**Degree in Computer Engineering**
+*Universitat Oberta de Catalunya (UOC) — Enrolled to explore specific subjects of interest*
 
-### Technical Engineering in Telecommunications
-**Universidad de Alicante** | *Alicante*
-- 01/2003 - 01/2008 · Not finished
+**Technical Engineering in Telecommunications**
+*Universidad de Alicante — 2003–2008 (Not completed)*
 
 ## Languages
 
-- **Spanish** (Native)
-- **English** (Proficient)
-- **Catalan** (Intermediate)
+- **Spanish** – Native
+- **English** – Proficient
+- **Catalan** – Intermediate
 
 ## Key Achievements
 
-- **FinOps Leadership**: Successfully reduced annual cloud expenditure by $1 million at StubHub
-- **Infrastructure Automation**: Achieved 99.9% uptime improvement through automation and best practices
-- **Cloud Migration**: Led successful migrations from on-premise to cloud infrastructure
-- **Team Leadership**: Promoted to lead DevOps teams and foster collaborative culture
-- **Security Compliance**: Ensured PCI compliance for financial services infrastructure
+- 💸 **$1M+ Annual Cloud Savings** — Led FinOps initiative at StubHub
+- 🛠️ **99.9% Uptime** — Achieved through automation and infrastructure modernization
+- 🚀 **Cloud Migration** — Led successful on-prem to cloud transitions
+- 🧑‍🤝‍🧑 **Team Leadership** — Promoted into lead roles across multiple teams
+- 🔐 **Compliance Delivery** — Enabled PCI/ECB-compliant cloud deployments

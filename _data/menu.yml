@@ -12,8 +12,6 @@ entries:
     entries:
       - title: resume
         url: cv
-      - title: skills
-        url: skills
       - title: projects
         url: projects
       - title: about
