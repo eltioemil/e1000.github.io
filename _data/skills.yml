@@ -1,0 +1,85 @@
+---
+- name: Cloud & Platforms
+  order: 1
+  items:
+    - AWS
+    - GCP
+    - Kubernetes
+    - Docker
+    - EKS
+    - GKE
+    - Pivotal Cloud Foundry
+
+- name: Infrastructure as Code
+  order: 2
+  items:
+    - Terraform
+    - CloudFormation
+    - Packer
+    - Ansible
+    - Puppet
+
+- name: CI/CD
+  order: 3
+  items:
+    - GitHub Actions
+    - Jenkins
+    - Argo CD
+    - Spinnaker
+    - Bamboo
+
+- name: Service Mesh & Ingress
+  order: 4
+  items:
+    - Istio
+    - Traefik
+    - NGINX Ingress
+    - GKE Ingress
+
+- name: Observability
+  order: 5
+  items:
+    - Grafana
+    - Prometheus
+    - Loki
+    - Mimir
+    - Fluent Bit
+    - Datadog
+    - Thanos
+    - CloudWatch
+    - OpenTelemetry
+    - Elasticsearch
+    - Kibana
+    - Logstash
+
+- name: Databases
+  order: 6
+  items:
+    - PostgreSQL
+    - MySQL
+    - Redis (Memorystore)
+    - DynamoDB
+    - MongoDB
+    - Amazon DocumentDB
+    - Cloud SQL
+
+- name: Message Brokers
+  order: 7
+  items:
+    - Pub/Sub
+    - Pulsar
+    - Kafka
+
+- name: Languages & Tooling
+  order: 8
+  items:
+    - Python
+    - Bash
+    - Groovy
+
+- name: Practices
+  order: 9
+  items:
+    - GitOps
+    - FinOps
+    - Agile

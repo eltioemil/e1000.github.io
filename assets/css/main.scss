@@ -1,4 +1,87 @@
 ---
 ---
-
 @import "no-style-please";
+
+/* OpenMoji Black monochrome emoji font */
+@font-face {
+  font-family: "OpenMoji Black";
+  src: url("/assets/fonts/OpenMoji-Black.woff2") format("woff2");
+  font-display: swap;
+  unicode-range: U+203C-3299, U+1F000-1FAFF, U+1FC00-1FFFD;
+}
+/* Use OpenMoji automatically for emoji codepoints, keep monospace for text */
+body {
+  font-family: monospace, "OpenMoji Black", "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", system-ui, sans-serif;
+  font-variant-emoji: text;
+}
+
+.emoji, .emoji-large {
+  font-family: "OpenMoji Black", "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", system-ui, sans-serif;
+}
+
+.emoji-large { font-size: 1.25em; line-height: 1; }
+
+/* License block styling: override code block colors for license text */
+pre.license-text {
+  background: transparent;
+  color: inherit;
+  border: thin solid black;
+  padding: 1rem;
+  white-space: pre-wrap;
+}
+
+/* Light-themed code blocks (inline and fenced) */
+code {
+  background: #f6f8fa;
+  color: #111;
+}
+
+div.highlighter-rouge code {
+  background: #f6f8fa;
+  color: #111;
+  border: 1px solid #e1e4e8;
+}
+
+/* Keep code blocks light even in dark appearance (theme inverts whole page) */
+body[a="dark"] code,
+body[a="dark"] div.highlighter-rouge code {
+  filter: invert(1);
+}
+
+@media (prefers-color-scheme: dark) {
+  body[a="auto"] code,
+  body[a="auto"] div.highlighter-rouge code {
+    filter: invert(1);
+  }
+}
+
+/* Back-to-top button */
+.back-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.5rem 0.75rem;
+  border: thin solid black;
+  background: white;
+  color: black;
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* On wider screens, align the button to the content column's right edge */
+@media (min-width: 720px) {
+  .back-to-top {
+    /* Place 20px to the right of the content column (includes .w padding of 2rem) */
+    right: auto;
+    left: calc(50% + 320px + 2rem + 20px);
+  }
+}

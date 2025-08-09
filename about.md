@@ -14,11 +14,10 @@ I started out doing everything from networking to sysadmin work. Over time, I le
 
 I’ve spent most of my recent years working with:
 
-- **Cloud infrastructure**: AWS, GCP, Terraform, CI/CD, FinOps
-- **Kubernetes at scale**: EKS, GKE, Argo CD, GitOps, observability stacks
-- **Automation & IaC**: Terraform modules, Ansible, Packer, GitHub Actions, Jenkins
-- **Monitoring & logging**: Grafana, Prometheus, Loki, Mimir, Fluent-bit
-- **Security & governance**: IAM, PCI compliance, OPA policies
+{% assign cats = site.data.skills | sort: 'order' %}
+{% for category in cats %}
+- **{{ category.name }}**: {{ category.items | join: ", " }}
+{% endfor %}
 
 I’ve also led platform teams, contributed to incident reviews, helped development teams own their infrastructure, and pushed for better practices without becoming dogmatic about it.
 

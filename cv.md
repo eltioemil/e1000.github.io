@@ -4,6 +4,8 @@ title: Emilio Ureña Ramírez - Senior DevOps Engineer
 permalink: /cv/
 ---
 
+_Last updated: {{ site.time | date: "%Y-%m-%d" }}_
+
 ## Professional Summary
 
 Senior DevOps and Platform Engineer with a strong foundation in Kubernetes, cloud infrastructure, and automation. Over the years, I've worked across AWS and GCP environments, leading infrastructure projects, building internal platforms, and driving FinOps and observability initiatives. I care deeply about creating resilient systems, enabling developer self-service, and contributing to a culture of shared ownership and continuous improvement.
@@ -25,14 +27,16 @@ Senior DevOps and Platform Engineer with a strong foundation in Kubernetes, clou
 - Deployed an LGTM observability stack (Loki, Grafana, Mimir) on spot nodes for efficiency
 - Architected Cloudflare for SaaS integration and managed over 100 zones for CDN and DDoS protection
 - Developed internal back-office tools to improve infrastructure-product visibility and incident response
+- Used GCP services including Memorystore (Redis), Cloud SQL (PostgreSQL), and Pub/Sub; also worked with Pulsar for messaging
 
 ### Senior DevOps Engineer
 **Clarivate** — *Remote from Bilbao | May 2020 – Jan 2022*
 - Managed multi-region AWS infrastructure for global services, including APIs, IAM, and data services
-- Built Terraform and ECS Fargate deployment pipelines using Jenkins and a custom Groovy shared library
+- Built Terraform and ECS Fargate deployment pipelines using Jenkins, Spinnaker, and a custom Groovy shared library
 - Enabled self-service infrastructure via Backstage integration
 - Promoted DevOps culture with internal demos, workshops, and automation frameworks
 - Led EKS adoption and service mesh implementation with Istio and Kiali
+ - Led EKS adoption and service mesh implementation with Istio
 
 ### Manager / Technical Lead
 **StubHub** — *Remote from Bilbao | Sep 2019 – May 2020*
@@ -56,7 +60,7 @@ Senior DevOps and Platform Engineer with a strong foundation in Kubernetes, clou
 
 ### System Administrator / DevOps
 **Rentalia Holidays S.L.** — *Madrid | Jun 2013 – Jan 2016*
-- Migrated from baremetal to OpenNebula-based virtualization
+- Migrated from bare metal to OpenNebula-based virtualization
 - Introduced CI/CD and config management with Puppet and Foreman
 - Boosted uptime from 97% to 99.9% by modernizing legacy systems
 
@@ -68,17 +72,15 @@ Senior DevOps and Platform Engineer with a strong foundation in Kubernetes, clou
 
 ## Skills
 
-{% for skill_category in site.skills %}
-**{{ skill_category.name }}**
-{% for skill in skill_category.items %}
-- {{ skill }}
-{% endfor %}
+{% assign cats = site.data.skills | sort: 'order' %}
+{% for category in cats %}
+**{{ category.name }}**: {{ category.items | join: ", " }}
 {% endfor %}
 
 ## Education
 
 **Degree in Computer Engineering**
-*Universitat Oberta de Catalunya (UOC) — Enrolled to explore specific subjects of interest*
+*Universitat Oberta de Catalunya (UOC) — Ongoing (part-time)*
 
 **Technical Engineering in Telecommunications**
 *Universidad de Alicante — 2003–2008 (Not completed)*
@@ -91,8 +93,8 @@ Senior DevOps and Platform Engineer with a strong foundation in Kubernetes, clou
 
 ## Key Achievements
 
-- 💸 **$1M+ Annual Cloud Savings** — Led FinOps initiative at StubHub
-- 🛠️ **99.9% Uptime** — Achieved through automation and infrastructure modernization
-- 🚀 **Cloud Migration** — Led successful on-prem to cloud transitions
-- 🧑‍🤝‍🧑 **Team Leadership** — Promoted into lead roles across multiple teams
-- 🔐 **Compliance Delivery** — Enabled PCI/ECB-compliant cloud deployments
+- <span class="emoji-large">💸</span> **$1M+ Annual Cloud Savings** — Led FinOps initiative at StubHub
+- <span class="emoji-large">🛠️</span> **99.9% Uptime** — Achieved through automation and infrastructure modernization
+- <span class="emoji-large">🚀</span> **Cloud Migration** — Led successful on-prem to cloud transitions
+- <span class="emoji-large">🧑‍🤝‍🧑</span> **Team Leadership** — Promoted into lead roles across multiple teams
+- <span class="emoji-large">🔐</span> **Compliance Delivery** — Enabled PCI/ECB-compliant cloud deployments

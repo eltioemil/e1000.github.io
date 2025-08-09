@@ -1,32 +1,15 @@
-title: E1000 # name of the site
+title: Emilio Ureña — Senior DevOps Engineer # name of the site
 author: Emilio Ureña # name of site's author
 email: contact@e1000.es # email of site's author
 url: https://www.e1000.es # root address of the site
 baseurl: "" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
 description: > # description of the site (multiple lines allowed)
-  I'm Emilio Ureña, a Senior DevOps Engineer based in Spain with over 15 years of experience in infrastructure management, cloud technologies, and DevOps practices. I specialize in creating efficient, scalable, and reliable infrastructure solutions using modern cloud-native technologies.
+  I'm Emilio Ureña, a Senior DevOps and Platform Engineer. I build reliable, scalable cloud and Kubernetes platforms
+  and help teams ship faster with strong automation and observability.
 location: Spain
 github_username: eltioemil
 linkedin_username: emiliourena
 
-skills:
-  - name: Cloud & Platforms
-    items: AWS, GCP, Kubernetes, Docker
-
-  - name: Infrastructure as Code
-    items: Terraform, CloudFormation
-
-  - name: CI/CD & Automation
-    items: GitHub Actions, Jenkins, Argo CD
-
-  - name: Observability
-    items: Grafana, Prometheus, Loki
-
-  - name: Programming & Scripting
-    items: Python, Bash, Groovy
-
-  - name: Practices
-    items: GitOps, FinOps, Agile
 
 permalink: /:slug.html
 
@@ -37,9 +20,9 @@ favicon: "logo.png" # name+extension of favicon (which must be put on the root f
 
 theme_config:
   appearance: "auto" # can be "light", "dark" or "auto"
-  back_home_text: ".." # customize text for homepage link in post layout
+  back_home_text: '<span class="emoji-large">🏠</span> Back' # customize text for homepage link in post layout
   date_format: "%Y-%m-%d" # customize how date is formatted
-  show_description: false # show blog description in home page
+  show_description: true # show blog description in home page
   lowercase_titles: true # show titles in lowercase in lists
 
 sass:

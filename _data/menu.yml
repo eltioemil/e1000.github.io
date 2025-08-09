@@ -10,7 +10,7 @@ entries:
 
   - title: pages
     entries:
-      - title: resume
+      - title: CV
         url: cv
       - title: projects
         url: projects
