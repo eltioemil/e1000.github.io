@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Skip on home/index pages (layout: home)
+    var isHome = document.body && document.querySelector('header + *') && document.querySelector('header h1');
+    if (document.querySelector('meta[name="jekyll-page-layout"][content="home"]')) {
+        return;
+    }
     var button = document.createElement('button');
     button.type = 'button';
     button.className = 'back-to-top';
