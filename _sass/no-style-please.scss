@@ -23,6 +23,22 @@ body[a="dark"] {
   @include dark-appearance;
 }
 
+body[a="light"] {
+  // Explicitly force light mode (no dark appearance)
+  filter: none;
+
+  img {
+    filter: none;
+  }
+
+  .emoji {
+    filter: none;
+  }
+
+  iframe {
+    filter: none;
+  }
+}
 
 @media (prefers-color-scheme: dark) {
   body[a="auto"] {
