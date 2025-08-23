@@ -1,13 +1,15 @@
 # Emilio Ureña — CV Website
 
-Minimal, fast personal site built with Jekyll using the “no-style-please” theme. Deployed on GitHub Pages.
+Minimal, fast personal site built with Jekyll using the "no-style-please" theme. Deployed on GitHub Pages.
 
 ## Features
 - Unified Skills data in `_data/skills.yml` rendered on `cv.md` and `about.md`
 - Monochrome emojis via OpenMoji font (`assets/fonts/OpenMoji-Black.woff2`)
+- Dark mode toggle with cookie-based preference storage
 - Light-themed code blocks
 - Footer with license and theme attribution
-- Floating “Back to top” button
+- Floating "Back to top" button
+- Cookie notice with dedicated privacy policy
 
 ## Local development
 You can run locally either with Docker (recommended) or with a local Ruby toolchain.
@@ -33,11 +35,13 @@ bundle exec jekyll serve --host 0.0.0.0
 ## Project structure
 - `_config.yml`: site metadata, theme config
 - `_data/skills.yml`: single source of truth for skills (ordered categories)
-- `_includes/`: shared partials (`head.html`, `footer.html`, etc.)
+- `_includes/`: shared partials (`head.html`, `footer.html`, `cookie_notice.html`, etc.)
 - `_layouts/`: page layouts (`default.html`, `page.html`, `home.html`)
 - `assets/css/main.scss`: site styles (imports theme and custom rules)
 - `assets/js/back-to-top.js`: scroll-to-top button logic
+- `assets/js/theme-toggle.js`: dark mode toggle with cookie storage
 - `cv.md`, `about.md`, `projects.md`, `contact.md`: content pages
+- `cookies.md`: cookie policy page
 - `license.md`: license page
 
 ## Editing skills

@@ -9,17 +9,22 @@
   font-display: swap;
   unicode-range: U+203C-3299, U+1F000-1FAFF, U+1FC00-1FFFD;
 }
+
 /* Use OpenMoji automatically for emoji codepoints, keep monospace for text */
 body {
   font-family: monospace, "OpenMoji Black", "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", system-ui, sans-serif;
   font-variant-emoji: text;
 }
 
-.emoji, .emoji-large {
+.emoji,
+.emoji-large {
   font-family: "OpenMoji Black", "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", system-ui, sans-serif;
 }
 
-.emoji-large { font-size: 1.25em; line-height: 1; }
+.emoji-large {
+  font-size: 1.25em;
+  line-height: 1;
+}
 
 /* License block styling: override code block colors for license text */
 pre.license-text {
@@ -49,6 +54,7 @@ body[a="dark"] div.highlighter-rouge code {
 }
 
 @media (prefers-color-scheme: dark) {
+
   body[a="auto"] code,
   body[a="auto"] div.highlighter-rouge code {
     filter: invert(1);
@@ -85,3 +91,82 @@ body[a="dark"] div.highlighter-rouge code {
     left: calc(50% + 320px + 2rem + 20px);
   }
 }
+
+/* Theme toggle button */
+.theme-toggle-button {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  text-decoration: underline;
+  display: inline;
+}
+
+.theme-toggle-button:hover {
+  opacity: 0.7;
+}
+
+.theme-toggle-button:focus {
+  outline: 1px solid;
+  outline-offset: 2px;
+}
+
+.theme-icon {
+  margin-right: 0.25em;
+}
+
+/* Cookie notice */
+.cookie-notice {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: thin solid black;
+  padding: 1rem;
+  z-index: 1000;
+  display: none;
+}
+
+.cookie-notice-content {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.cookie-notice-text {
+  flex: 1;
+  min-width: 250px;
+  margin: 0;
+}
+
+.cookie-accept-button {
+  background: black;
+  color: white;
+  border: thin solid black;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.cookie-accept-button:hover {
+  background: white;
+  color: black;
+}
+
+.cookie-accept-button:focus {
+  outline: 2px solid;
+  outline-offset: 2px;
+}
+
+/* Cookie notice follows the theme naturally - no special dark mode handling needed */
