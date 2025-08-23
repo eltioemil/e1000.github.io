@@ -1,6 +1,6 @@
 # Emilio Ureña — CV Website
 
-Minimal, fast personal site built with Jekyll using the “no-style-please” theme. Deployed on GitHub Pages.
+Minimal, fast personal site built with Jekyll using the "no-style-please" theme. Deployed on GitHub Pages with automated CI/CD testing.
 
 ## Features
 - Unified Skills data in `_data/skills.yml` rendered on `cv.md` and `about.md`
@@ -61,6 +61,23 @@ Example:
 OpenMoji Black is loaded via `@font-face` in `assets/css/main.scss`. Wrap emojis with `.emoji` or `.emoji-large` if you need explicit sizing; otherwise they will render inline as text using the OpenMoji font fallback.
 
 Font file expected at `assets/fonts/OpenMoji-Black.woff2`.
+
+## CI/CD Pipeline
+
+The site uses GitHub Actions for automated testing and deployment:
+
+### On Pull Requests:
+- **Jekyll Build Test** - Validates site builds correctly
+- **HTML Validation** - Checks markup quality and links
+- **Accessibility Testing** - WCAG 2.1 AA compliance with Pa11y
+- **Lighthouse Audit** - Performance, SEO, and best practices
+- **Security Scan** - Vulnerability scanning with Trivy
+
+### On Main Branch:
+- **Automated Deployment** - Builds and deploys to GitHub Pages
+- **Artifact Storage** - Build artifacts saved for debugging
+
+All tests must pass before PRs can be merged, ensuring site quality and preventing breakages.
 
 ## License & attribution
 - Site content: MIT (see `license.md`)
