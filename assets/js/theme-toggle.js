@@ -77,34 +77,7 @@
     function showCookieNotice() {
         const notice = document.getElementById('cookie-notice');
         if (notice) {
-            // Force display on main container
-            notice.style.setProperty('display', 'block', 'important');
-
-            // Force display on content container
-            const content = notice.querySelector('.cookie-notice-content');
-            if (content) {
-                content.style.setProperty('display', 'flex', 'important');
-                content.style.setProperty('visibility', 'visible', 'important');
-                content.style.setProperty('opacity', '1', 'important');
-            }
-
-            // Force display on text element
-            const text = notice.querySelector('.cookie-notice-text');
-            if (text) {
-                text.style.setProperty('display', 'block', 'important');
-                text.style.setProperty('visibility', 'visible', 'important');
-                text.style.setProperty('opacity', '1', 'important');
-                text.style.setProperty('color', 'black', 'important');
-                text.style.setProperty('font-size', '16px', 'important');
-            }
-
-            // Force display on button
-            const button = notice.querySelector('#cookie-accept');
-            if (button) {
-                button.style.setProperty('display', 'inline-block', 'important');
-                button.style.setProperty('visibility', 'visible', 'important');
-                button.style.setProperty('opacity', '1', 'important');
-            }
+            notice.style.display = 'block';
         }
     }
 
