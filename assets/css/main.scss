@@ -192,9 +192,29 @@ body[a="dark"] div.highlighter-rouge code {
 #cookie-notice .cookie-notice-content {
   display: flex !important;
   visibility: visible !important;
+  opacity: 1 !important;
+  height: auto !important;
+  min-height: 40px !important;
+  overflow: visible !important;
 }
 
 /* Ensure cookie notice content is never hidden */
 body #cookie-notice .cookie-notice-content {
   display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Ensure all child elements are visible */
+#cookie-notice .cookie-notice-text {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: black !important;
+}
+
+#cookie-notice .cookie-accept-button {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
