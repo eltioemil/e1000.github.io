@@ -125,47 +125,54 @@ body[a="dark"] div.highlighter-rouge code {
   bottom: 0;
   left: 0;
   right: 0;
-  background: white;
-  border-top: thin solid black;
-  padding: 1rem;
-  z-index: 9999;
+  background: white !important;
+  border-top: thin solid black !important;
+  padding: 1rem !important;
+  z-index: 9999 !important;
   display: none;
   filter: none !important;
-  color: black;
+  color: black !important;
+  min-height: 60px;
+  box-sizing: border-box;
+  width: 100% !important;
 }
 
 .cookie-notice-content {
   max-width: 640px;
   margin: 0 auto;
-  display: flex;
+  display: flex !important;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  color: black;
+  color: black !important;
+  min-height: 40px;
 }
 
 .cookie-notice-text {
   flex: 1;
   min-width: 250px;
-  margin: 0;
-  color: black;
+  margin: 0 !important;
+  color: black !important;
+  font-size: 16px !important;
+  line-height: 1.4 !important;
 }
 
 .cookie-notice-text a {
-  color: black;
-  text-decoration: underline;
+  color: black !important;
+  text-decoration: underline !important;
 }
 
 .cookie-accept-button {
-  background: black;
-  color: white;
-  border: thin solid black;
-  padding: 0.5rem 1rem;
+  background: black !important;
+  color: white !important;
+  border: thin solid black !important;
+  padding: 0.5rem 1rem !important;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 16px !important;
   cursor: pointer;
   white-space: nowrap;
+  display: inline-block !important;
 }
 
 .cookie-accept-button:hover {

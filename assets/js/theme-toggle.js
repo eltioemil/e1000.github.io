@@ -78,6 +78,10 @@
         const notice = document.getElementById('cookie-notice');
         if (notice) {
             notice.style.display = 'block';
+            notice.style.visibility = 'visible';
+            notice.style.opacity = '1';
+            // Force reflow to ensure the element is properly displayed
+            notice.offsetHeight;
         }
     }
 
@@ -120,20 +124,29 @@
 
     // Initialize when DOM is ready
     function init() {
-        const currentTheme = initTheme();
+        // Wait a bit to ensure all elements are fully rendered
+        setTimeout(() => {
+            const currentTheme = initTheme();
 
-        // Set up theme toggle button
-        const toggleButton = document.getElementById('theme-toggle');
-        if (toggleButton) {
-            toggleButton.addEventListener('click', toggleTheme);
-            updateToggleButton(currentTheme);
-        }
+            // Set up theme toggle button
+            const toggleButton = document.getElementById('theme-toggle');
+            if (toggleButton) {
+                toggleButton.addEventListener('click', toggleTheme);
+                updateToggleButton(currentTheme);
+            }
 
-        // Set up cookie notice button
-        const cookieButton = document.getElementById('cookie-accept');
-        if (cookieButton) {
-            cookieButton.addEventListener('click', hideCookieNotice);
-        }
+            // Set up cookie notice button
+            const cookieButton = document.getElementById('cookie-accept');
+            if (cookieButton) {
+                cookieButton.addEventListener('click', hideCookieNotice);
+            }
+
+            // Force check for cookie notice display
+            if (!getCookie(COOKIE_NAME) && !getCookie('cookies-acknowledged')) {
+                // Add a small delay to ensure CSS is fully loaded
+                setTimeout(showCookieNotice, 100);
+            }
+        }, 50);
     }
 
     // Run initialization
