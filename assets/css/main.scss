@@ -179,4 +179,22 @@ body[a="dark"] div.highlighter-rouge code {
   outline-offset: 2px;
 }
 
-/* Cookie notice follows the theme naturally - no special dark mode handling needed */
+/* High specificity rules to ensure cookie notice displays properly */
+#cookie-notice.cookie-notice {
+  display: none;
+  filter: none !important;
+}
+
+#cookie-notice.cookie-notice[style*="display: block"] {
+  display: block !important;
+}
+
+#cookie-notice .cookie-notice-content {
+  display: flex !important;
+  visibility: visible !important;
+}
+
+/* Ensure cookie notice content is never hidden */
+body #cookie-notice .cookie-notice-content {
+  display: flex !important;
+}
