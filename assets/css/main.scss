@@ -199,10 +199,13 @@ body[a="dark"] div.highlighter-rouge code {
 }
 
 /* Ensure cookie notice content is never hidden */
-body #cookie-notice .cookie-notice-content {
+body div#cookie-notice.cookie-notice div.cookie-notice-content {
   display: flex !important;
   visibility: visible !important;
   opacity: 1 !important;
+  height: auto !important;
+  min-height: 40px !important;
+  overflow: visible !important;
 }
 
 /* Ultra-high specificity selectors to ensure visibility */
