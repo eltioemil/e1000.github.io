@@ -65,8 +65,8 @@
         const storedTheme = getStoredTheme();
         applyTheme(storedTheme);
 
-        // Show cookie notice if no preference is stored and cookies haven't been acknowledged
-        if (!getCookie(COOKIE_NAME) && !getCookie('cookies-acknowledged')) {
+        // Show cookie notice if cookies haven't been acknowledged
+        if (!getCookie('cookies-acknowledged')) {
             showCookieNotice();
         }
 
@@ -77,9 +77,18 @@
     function showCookieNotice() {
         const notice = document.getElementById('cookie-notice');
         if (notice) {
+            // Force all display properties to ensure visibility
             notice.style.display = 'block';
             notice.style.visibility = 'visible';
             notice.style.opacity = '1';
+            notice.style.position = 'fixed';
+            notice.style.bottom = '0';
+            notice.style.left = '0';
+            notice.style.right = '0';
+            notice.style.zIndex = '9999';
+            notice.style.background = 'white';
+            notice.style.color = 'black';
+            notice.style.filter = 'none';
             // Force reflow to ensure the element is properly displayed
             notice.offsetHeight;
         }
@@ -98,13 +107,19 @@
         const currentTheme = document.body.getAttribute('a') || 'auto';
         const nextTheme = getNextTheme(currentTheme);
 
+        // Check if cookie notice is currently visible
+        const notice = document.getElementById('cookie-notice');
+        const isNoticeVisible = notice && notice.style.display === 'block';
+
         applyTheme(nextTheme);
         setStoredTheme(nextTheme);
         updateToggleButton(nextTheme);
 
-        // Show cookie notice if this is the first time setting a preference
-        if (!getCookie('cookies-acknowledged')) {
-            showCookieNotice();
+        // Restore cookie notice visibility if it was visible or should be shown
+        if (isNoticeVisible || !getCookie('cookies-acknowledged')) {
+            setTimeout(() => {
+                showCookieNotice();
+            }, 50);
         }
     }
 
