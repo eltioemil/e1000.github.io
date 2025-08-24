@@ -205,37 +205,40 @@ body #cookie-notice .cookie-notice-content {
   opacity: 1 !important;
 }
 
-/* Ensure all child elements are visible */
-#cookie-notice .cookie-notice-text {
+/* Ultra-high specificity selectors to ensure visibility */
+body div#cookie-notice.cookie-notice div.cookie-notice-content p.cookie-notice-text {
   display: block !important;
   visibility: visible !important;
   opacity: 1 !important;
-  color: black !important;
+  color: #000000 !important;
   font-size: 16px !important;
   line-height: 1.4 !important;
   font-family: monospace !important;
   height: auto !important;
   width: auto !important;
   position: static !important;
-}
-
-#cookie-notice .cookie-notice-text p {
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  color: black !important;
-  font-size: 16px !important;
-  line-height: 1.4 !important;
   margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  text-decoration: none !important;
+  text-indent: 0 !important;
 }
 
-#cookie-notice .cookie-accept-button {
+body div#cookie-notice.cookie-notice div.cookie-notice-content button#cookie-accept.cookie-accept-button {
   display: inline-block !important;
   visibility: visible !important;
   opacity: 1 !important;
+  color: #ffffff !important;
+  background: #000000 !important;
   font-size: 16px !important;
   line-height: 1.4 !important;
+  font-family: monospace !important;
   height: auto !important;
   width: auto !important;
   position: static !important;
+  margin: 0 !important;
+  padding: 0.5rem 1rem !important;
+  border: 1px solid #000000 !important;
+  text-decoration: none !important;
+  text-indent: 0 !important;
 }
