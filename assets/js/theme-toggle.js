@@ -77,20 +77,7 @@
     function showCookieNotice() {
         const notice = document.getElementById('cookie-notice');
         if (notice) {
-            // Force all display properties to ensure visibility
-            notice.style.setProperty('display', 'block', 'important');
-            notice.style.setProperty('visibility', 'visible', 'important');
-            notice.style.setProperty('opacity', '1', 'important');
-            notice.style.setProperty('position', 'fixed', 'important');
-            notice.style.setProperty('bottom', '0', 'important');
-            notice.style.setProperty('left', '0', 'important');
-            notice.style.setProperty('right', '0', 'important');
-            notice.style.setProperty('z-index', '9999', 'important');
-            notice.style.setProperty('background', 'white', 'important');
-            notice.style.setProperty('color', 'black', 'important');
-            notice.style.setProperty('filter', 'none', 'important');
-            // Force reflow to ensure the element is properly displayed
-            notice.offsetHeight;
+            notice.style.display = 'block';
         }
     }
 
