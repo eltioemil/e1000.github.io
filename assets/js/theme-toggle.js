@@ -78,17 +78,17 @@
         const notice = document.getElementById('cookie-notice');
         if (notice) {
             // Force all display properties to ensure visibility
-            notice.style.display = 'block';
-            notice.style.visibility = 'visible';
-            notice.style.opacity = '1';
-            notice.style.position = 'fixed';
-            notice.style.bottom = '0';
-            notice.style.left = '0';
-            notice.style.right = '0';
-            notice.style.zIndex = '9999';
-            notice.style.background = 'white';
-            notice.style.color = 'black';
-            notice.style.filter = 'none';
+            notice.style.setProperty('display', 'block', 'important');
+            notice.style.setProperty('visibility', 'visible', 'important');
+            notice.style.setProperty('opacity', '1', 'important');
+            notice.style.setProperty('position', 'fixed', 'important');
+            notice.style.setProperty('bottom', '0', 'important');
+            notice.style.setProperty('left', '0', 'important');
+            notice.style.setProperty('right', '0', 'important');
+            notice.style.setProperty('z-index', '9999', 'important');
+            notice.style.setProperty('background', 'white', 'important');
+            notice.style.setProperty('color', 'black', 'important');
+            notice.style.setProperty('filter', 'none', 'important');
             // Force reflow to ensure the element is properly displayed
             notice.offsetHeight;
         }
