@@ -1,10 +1,52 @@
-<div id="cookie-notice" class="cookie-notice">
-    <div class="cookie-notice-content">
-        <p class="cookie-notice-text">
+<div id="cookie-notice" style="
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    background: #ffffff !important;
+    border-top: 1px solid #000000 !important;
+    padding: 1rem !important;
+    z-index: 999999 !important;
+    display: none;
+    color: #000000 !important;
+    font-family: monospace !important;
+    filter: none !important;
+    transform: none !important;
+">
+    <div style="
+        max-width: 640px !important;
+        margin: 0 auto !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 1rem !important;
+        color: #000000 !important;
+        font-family: monospace !important;
+    ">
+        <p style="
+            flex: 1 !important;
+            margin: 0 !important;
+            color: #000000 !important;
+            font-size: 16px !important;
+            font-family: monospace !important;
+        ">
             This site uses cookies to remember your theme preference.
-            <a href="{{ '/cookies/' | relative_url }}">Learn more</a>
+            <a href="{{ '/cookies/' | relative_url }}" style="
+                color: #000000 !important;
+                text-decoration: underline !important;
+                font-family: monospace !important;
+            ">Learn more</a>
         </p>
-        <button id="cookie-accept" class="cookie-accept-button">
+        <button id="cookie-accept" style="
+            background: #000000 !important;
+            color: #ffffff !important;
+            border: 1px solid #000000 !important;
+            padding: 0.5rem 1rem !important;
+            font-family: monospace !important;
+            font-size: 16px !important;
+            cursor: pointer !important;
+        ">
             Got it
         </button>
     </div>
