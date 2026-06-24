@@ -84,5 +84,5 @@ Throughout my career, I’ve:
 
 ## Want to Learn More?
 
-Check out my [GitHub](https://github.com/{{ site.github_username }}) or [LinkedIn](https://www.linkedin.com/in/{{ site.linkedin_username }}) for more about my work and ideas.
+Check out my [GitHub](https://github.com/{{ site.github_username }}) or [LinkedIn](https://www.linkedin.com/in/{{ site.linkedin_username }}) for more about my work and ideas. I'm also in [Mastodon](https://fosstodon.org/@{{ site.fosstodon_username }})
 Looking to collaborate or need help with infrastructure challenges? [Get in touch](/contact/)!

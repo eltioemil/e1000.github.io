@@ -9,6 +9,7 @@ description: > # description of the site (multiple lines allowed)
 location: Spain
 github_username: eltioemil
 linkedin_username: emiliourena
+fosstodon_username: eltioemil
 
 
 permalink: /:slug.html

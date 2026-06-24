@@ -9,5 +9,6 @@ If you’d like to connect — whether it’s to discuss infrastructure, DevOps 
 - **Email:** [{{ site.email }}](mailto:{{ site.email }})
 - **LinkedIn:** [emiliourena](https://www.linkedin.com/in/{{ site.linkedin_username }})
 - **GitHub:** [@{{ site.github_username }}](https://github.com/{{ site.github_username }})
+- **Fosstodon:**   [@{{ site.fosstodon_username }}](https://fosstodon.org/@{{ site.fosstodon_username }})
 
 I usually respond within a day or two during the week. Looking forward to hearing from you!

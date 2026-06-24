@@ -41,3 +41,4 @@ I’m always open to new challenges or just exchanging ideas. Feel free to reach
 **Email:** {{ site.email }}
 **LinkedIn:** [emiliourena](https://www.linkedin.com/in/emiliourena)
 **GitHub:** [@{{ site.github_username }}](https://github.com/{{ site.github_username }})
+**Fosstodon:**   [@{{ site.fosstodon_username }}](https://fosstodon.org/@{{ site.fosstodon_username }})
