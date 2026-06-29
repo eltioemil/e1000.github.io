@@ -14,10 +14,11 @@ Senior DevOps and Platform Engineer with a strong foundation in Kubernetes, clou
 
 ### Senior Cloud Architect
 **T-Systems Iberia** — *Remote from Bilbao | Jan 2025 – Present*
-- Design and implement AWS architectures to support secure, scalable, and cost-efficient systems
-- Automate infrastructure and CI/CD pipelines using Terraform, Jenkins, GitHub Actions, and Argo CD
-- Guide clients through Kubernetes (EKS) adoption and manage cluster operations with Traefik ingress and GitOps delivery
-- Advise on cloud-native patterns and best practices during migration and modernization projects
+- Cloud architecture design, implementation, and management on AWS — including migration projects from OpenStack to AWS following Generalitat de Catalunya governance guidelines — ensuring scalable, secure, and cost-efficient systems.
+- Assess and contribute to economic proposals for migration projects, leveraging AI agents and services like AWS Application Discovery Service to evaluate scope and strategy prior to implementation.
+- Develop custom AWS solutions (Lambda, Batch) to extend cloud capabilities at organizational level, covering areas such as billing automation, security findings notification, and cost optimization for non-productive environments.
+- Collaborate with clients to automate and optimize infrastructure deployment and CI/CD pipelines using tools like Terraform, Jenkins, ArgoCD and GitHub Actions, while implementing containerization and orchestration solutions.
+- Mentor junior DevOps engineers, supporting their technical growth and career development.
 
 ### Senior Platform Engineer
 **BlueLabs** — *Remote from Bilbao | Jan 2022 – Jan 2025*
