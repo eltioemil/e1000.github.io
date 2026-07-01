@@ -8,7 +8,7 @@ lang_ref: about
 
 ## Hola, soy Emilio
 
-Soy Ingeniero DevOps Senior afincado en Bilbao. Llevo más de 15 años trabajando en infraestructura y cloud — desde montar servidores físicos y gestionar sistemas on-prem hasta automatizar entornos multicloud y ejecutar Kubernetes en producción.
+Soy Ingeniero DevOps Senior afincado en Bilbao. Llevo <span class="years-exp">18</span> años trabajando en infraestructura y cloud — desde montar servidores físicos y gestionar sistemas on-prem hasta automatizar entornos multicloud y ejecutar Kubernetes en producción.
 
 Empecé haciendo de todo: redes, administración de sistemas... Con el tiempo me fui volcando en la automatización, la infraestructura como código y, finalmente, el mundo cloud-native. Ahora me centro en construir plataformas fiables y escalables, y en ayudar a los equipos a entregar más rápido y con menos estrés.
 
