@@ -1,0 +1,15 @@
+{% if page.lang_ref %}
+  {% assign other_lang = 'es' %}
+  {% if page.lang == 'es' %}{% assign other_lang = 'en' %}{% endif %}
+  {% for p in site.pages %}
+    {% if p.lang_ref == page.lang_ref and p.lang == other_lang %}
+<div class="lang-switcher">
+      {% if page.lang == 'en' %}
+  <strong>EN</strong> · <a href="{{ p.url | relative_url }}" data-lang-switch="es">ES</a>
+      {% else %}
+  <a href="{{ p.url | relative_url }}" data-lang-switch="en">EN</a> · <strong>ES</strong>
+      {% endif %}
+</div>
+    {% endif %}
+  {% endfor %}
+{% endif %}

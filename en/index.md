@@ -1,0 +1,6 @@
+---
+layout: home
+lang: en
+lang_ref: home
+permalink: /
+---

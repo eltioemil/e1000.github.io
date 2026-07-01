@@ -3,12 +3,17 @@
     <div
         style="max-width:640px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;">
         <p style="flex:1;min-width:250px;margin:0;color:black;font-size:16px;font-family:monospace;">
-            This site uses cookies to remember your theme preference.
+            {% if page.lang == 'es' %}
+            Este sitio usa cookies para recordar tu preferencia de tema y de idioma.
+            <a href="{{ '/es/cookies/' | relative_url }}" style="color:black;text-decoration:underline;">Más información</a>
+            {% else %}
+            This site uses cookies to remember your theme and language preference.
             <a href="{{ '/cookies/' | relative_url }}" style="color:black;text-decoration:underline;">Learn more</a>
+            {% endif %}
         </p>
         <button id="cookie-accept"
             style="background:black;color:white;border:1px solid black;padding:0.5rem 1rem;font-family:monospace;cursor:pointer;">
-            Got it
+            {% if page.lang == 'es' %}Entendido{% else %}Got it{% endif %}
         </button>
     </div>
 </div>

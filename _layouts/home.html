@@ -2,12 +2,18 @@
 layout: default
 ---
 <header>
-  <h1>{{ site.title }}</h1>
+  <h1>{{ page.title | default: site.title }}</h1>
   {%-if site.theme_config.show_description-%}
-  <p>{{ site.description }}</p>
+  <p>{{ page.description | default: site.description }}</p>
   {%-endif-%}
 </header>
 
-{%-include menu_item.html collection=site.data.menu.entries-%}
+{%- include lang_switcher.html -%}
+
+{% if page.lang == 'es' %}
+  {%-include menu_item.html collection=site.data.menu_es.entries-%}
+{% else %}
+  {%-include menu_item.html collection=site.data.menu.entries-%}
+{% endif %}
 
 {{ content }}
