@@ -8,7 +8,7 @@ lang_ref: about
 
 ## Hey, I'm Emilio
 
-I'm a Senior DevOps Engineer based in Bilbao, Spain. I've been working in infrastructure and cloud for 15+ years — from racking servers and managing on-prem systems to automating multi-cloud environments and running Kubernetes in production.
+I'm a Senior DevOps Engineer based in Bilbao, Spain. I've been working in infrastructure and cloud for <span class="years-exp">18</span> years — from racking servers and managing on-prem systems to automating multi-cloud environments and running Kubernetes in production.
 
 I started out doing everything from networking to sysadmin work. Over time, I leaned into automation, infrastructure as code, and eventually the cloud-native world. These days, I focus on building reliable, scalable platforms and helping teams ship faster with less stress.
 

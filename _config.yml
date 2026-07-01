@@ -3,9 +3,9 @@ author: Emilio Ureña # name of site's author
 email: contact@e1000.es # email of site's author
 url: https://www.e1000.es # root address of the site
 baseurl: "" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
-description: > # description of the site (multiple lines allowed)
-  I'm Emilio Ureña, a Senior DevOps and Platform Engineer with 15+ years in infrastructure — from bare metal servers to multi-account cloud organizations. I build reliable platforms, automate the repetitive work away, and help teams own their infrastructure.
+
 location: Spain
+career_start: "2008-07-01"
 github_username: eltioemil
 linkedin_username: emiliourena
 fosstodon_username: eltioemil
