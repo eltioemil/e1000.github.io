@@ -52,11 +52,12 @@
     }
 
     function getThemeLabel(theme) {
+        const es = document.documentElement.lang === 'es';
         switch (theme) {
-            case 'light': return 'Light mode';
-            case 'dark': return 'Dark mode';
+            case 'light': return es ? 'Modo claro'      : 'Light mode';
+            case 'dark':  return es ? 'Modo oscuro'     : 'Dark mode';
             case 'auto':
-            default: return 'Auto mode';
+            default:      return es ? 'Modo automático' : 'Auto mode';
         }
     }
 

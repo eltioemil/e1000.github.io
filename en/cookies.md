@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Cookie Policy
+permalink: /cookies/
+lang: en
+lang_ref: cookies
 ---
 
 ## Cookie Policy
@@ -17,6 +20,7 @@ We use cookies for the following purposes:
 
 **Essential cookies** - These cookies are necessary for the website to function properly:
 - **Theme preference**: We store your dark/light mode preference so the site appears the way you prefer on future visits
+- **Language preference**: We store your chosen language (English or Spanish) so the site loads in your preferred language on future visits
 - **Cookie acknowledgment**: We remember that you've seen this cookie notice so we don't show it repeatedly
 
 ### Cookie details
@@ -24,6 +28,7 @@ We use cookies for the following purposes:
 | Cookie Name | Purpose | Duration | Type |
 |-------------|---------|----------|------|
 | `theme-preference` | Stores your chosen theme (auto/light/dark) | 1 year | Functional |
+| `lang-preference` | Stores your chosen language (en/es) | 1 year | Functional |
 | `cookies-acknowledged` | Remembers you've seen the cookie notice | 1 year | Functional |
 
 ### Managing cookies
@@ -38,6 +43,7 @@ You can control and manage cookies in several ways:
 
 **This website**: You can:
 - Change your theme preference using the toggle in the footer
+- Change your language using the EN · ES switcher on any page
 - Clear your preferences by deleting cookies in your browser
 
 ### No tracking

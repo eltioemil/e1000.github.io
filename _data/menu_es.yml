@@ -1,0 +1,19 @@
+entries:
+
+  - title: páginas
+    entries:
+      - title: CV
+        url: /es/cv/
+      - title: proyectos
+        url: /es/projects/
+      - title: sobre mí
+        url: /es/about/
+      - title: contacto
+        url: /es/contact/
+
+  - title: todas las entradas
+    post_list:
+      limit: 5
+      show_more: true
+      show_more_text: Ver archivo...
+      show_more_url: archive.html

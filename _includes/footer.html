@@ -5,14 +5,22 @@
             <a href="{{ '/license/' | relative_url }}">License</a>
         </p>
         <p>
+            {% if page.lang == 'es' %}
+            Basado en el tema
+            {% else %}
             Based on the
+            {% endif %}
             <a href="https://github.com/riggraz/no-style-please">no-style-please</a>
+            {% if page.lang == 'es' %}
+            de Riccardo Graziosi (MIT).
+            {% else %}
             theme by Riccardo Graziosi (MIT).
+            {% endif %}
         </p>
         <p>
             <button id="theme-toggle" class="theme-toggle-button" aria-label="Switch theme">
-                <span class="theme-icon">🔄</span>
-                <span class="theme-label">Auto mode</span>
+                <span class="theme-icon">◑</span>
+                <span class="theme-label">{% if page.lang == 'es' %}Modo automático{% else %}Auto mode{% endif %}</span>
             </button>
         </p>
     </div>
